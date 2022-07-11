@@ -24,9 +24,27 @@ body{
 .list{
     list-style: none;
 }
-
-/*Studio*/
+ul{
+    padding: 0;
+    margin: 0;
+}
 /*header section*/
+.header, .border{
+border-bottom: 1px solid #ECECEC;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.header .header-logo{
+    margin-right: 93px;
+}
 .logo{
     color: var(--accent-txt-cl);
 }
@@ -39,6 +57,12 @@ body{
 }
 .header {
     background-color: var(--light-bg-cl);
+}
+
+.list-nav{
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
 }
 
 .header-link-current{
@@ -60,6 +84,15 @@ body{
 }
 .current{
     color: var(--accent-txt-cl);
+}
+.list-nav .link{
+display: block;
+padding: 32px 0;
+}
+.contacts-nav{
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
 }
 .header-communication{
     font-weight: 500;
