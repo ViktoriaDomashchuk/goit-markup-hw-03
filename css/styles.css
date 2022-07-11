@@ -24,9 +24,13 @@ body{
 .list{
     list-style: none;
 }
+/*base styles*/
 ul, h1, h2, h3, h4, h5, h6, p{
     padding: 0;
     margin: 0;
+}
+img{
+    display: block;
 }
 /*header section*/
 .header, .border{
@@ -150,6 +154,10 @@ padding: 32px 0;
 .btn:focus{
 background-color:#188CE8;}
 /*Features*/
+.features .container{
+    display:flex ;
+    align-items: center;
+}
 .features.section{
 padding-top: 94px;
 padding-bottom: 94px;
@@ -190,16 +198,23 @@ padding-bottom: 94px;
     letter-spacing: 0.03em;
     color: var(--secondary-txt-cl);
 }
+/*What we do*/
+.skills.section{
+    padding-top: 0;
+    padding-bottom: 94px;
+}
 .heading {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16em;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
-/*Чем мы занимаемся*/
-.list-pic{
-    width: 370px;
+.list.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 /*наша команда*/
