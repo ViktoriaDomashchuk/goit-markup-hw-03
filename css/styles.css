@@ -24,7 +24,7 @@ body{
 .list{
     list-style: none;
 }
-ul{
+ul, h1, h2, h3, h4, h5, h6, p{
     padding: 0;
     margin: 0;
 }
@@ -108,12 +108,15 @@ padding: 32px 0;
 }
 
 /*Main section*/
-.title{
+.main.section{
+    padding: 200px 0;
+}
+.main{
     background-color: var(--dark-bg-cl);
    
 }
 
-.uppertitle{
+.main-title{
     font-weight: 900;
         font-size: 44px;
         line-height: 1.36em;
@@ -121,10 +124,15 @@ padding: 32px 0;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--txt-color);
+        width: 696px;
+        margin: auto;
+        margin-bottom: 30px;
            
 }
 
 .btn{
+    padding: 10px 32px;
+    border-radius: 4px;
     font-weight: 700;
         font-size: 16px;
         line-height: 1.875em ;
@@ -133,14 +141,39 @@ padding: 32px 0;
         background-color:var(--accent-txt-cl);
         cursor: pointer;
         font-family: inherit;
-        background-color: var(--accent-txt-cl);
         border: none;
+        display: block;
+        margin: 0 auto;
 }
 
 .btn:hover,
 .btn:focus{
 background-color:#188CE8;}
-/*Особенности*/
+/*Features*/
+.features-section{
+padding-top: 94px;
+padding-bottom: 94px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.features.list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.features.item{
+    width: 270px;
+}
 .caption{
             font-weight: 700;
                 font-size: 14px;
