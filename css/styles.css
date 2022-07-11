@@ -241,8 +241,13 @@ background-color:#188CE8;}
 /*footer*/
 .footer {
     background-color: var(--dark-bg-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-
+.footer .footer-logo{
+    display: block;
+    margin-bottom: 20px;
+}
 .footer-logo {
     font-weight: 700;
     font-size: 26px;
@@ -250,7 +255,14 @@ background-color:#188CE8;}
     color: var(--txt-color);
     font-family: 'Raleway';
 }
+.footet-contacts{
+    margin: auto;
 
+}
+.footer-item:not(:last-child){
+    display: block;
+margin-bottom: 9px;
+}
 .address-txt {
     font-size: 14px;
     line-height: 1.71em;
